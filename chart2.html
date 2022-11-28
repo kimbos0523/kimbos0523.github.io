@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .error {
+        color: red;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@4.17.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "hconcat": [{"data": {"name": "data-0f432d4ba44d40cadda75b430f74ca18"}, "mark": "bar", "encoding": {"x": {"field": "Site", "type": "nominal"}, "y": {"field": "Inches", "type": "quantitative"}}, "selection": {"selector017": {"type": "multi", "fields": ["Site"]}}, "title": "2022 Rainfall of Boston Neighborhood"}, {"data": {"name": "data-0d465bdb26848361893033879ebb64e6"}, "mark": "line", "encoding": {"color": {"field": "Site", "scale": {"scheme": "category10"}, "type": "nominal"}, "x": {"field": "Month", "sort": null, "type": "nominal"}, "y": {"field": "Inches", "type": "quantitative"}}, "title": "2022 Rainfall", "transform": [{"filter": {"selection": "selector017"}}]}], "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "datasets": {"data-0f432d4ba44d40cadda75b430f74ca18": [{"Site": "Roslindale - Roslindale Sq.", "Inches": 33.74}, {"Site": "Allston - Union Sq.", "Inches": 25.85}, {"Site": "Hyde Park - Cleary Sq.", "Inches": 30.12}, {"Site": "Mattapan - Harambee Park", "Inches": 29.76}, {"Site": "East Boston - Day Sq.", "Inches": 25.29}], "data-0d465bdb26848361893033879ebb64e6": [{"Site": "Allston - Union Sq.", "Month": "January", "Inches": 2.03}, {"Site": "Allston - Union Sq.", "Month": "February", "Inches": 3.39}, {"Site": "Allston - Union Sq.", "Month": "March", "Inches": 2.72}, {"Site": "Allston - Union Sq.", "Month": "April", "Inches": 2.91}, {"Site": "Allston - Union Sq.", "Month": "May", "Inches": 1.22}, {"Site": "Allston - Union Sq.", "Month": "June", "Inches": 2.6}, {"Site": "Allston - Union Sq.", "Month": "July", "Inches": 0.77}, {"Site": "Allston - Union Sq.", "Month": "August", "Inches": 2.0}, {"Site": "Allston - Union Sq.", "Month": "September", "Inches": 2.54}, {"Site": "Allston - Union Sq.", "Month": "October", "Inches": 4.14}, {"Site": "Allston - Union Sq.", "Month": "November", "Inches": 1.53}, {"Site": "East Boston - Day Sq.", "Month": "January", "Inches": 1.82}, {"Site": "East Boston - Day Sq.", "Month": "February", "Inches": 3.61}, {"Site": "East Boston - Day Sq.", "Month": "March", "Inches": 3.01}, {"Site": "East Boston - Day Sq.", "Month": "April", "Inches": 2.67}, {"Site": "East Boston - Day Sq.", "Month": "May", "Inches": 1.22}, {"Site": "East Boston - Day Sq.", "Month": "June", "Inches": 2.66}, {"Site": "East Boston - Day Sq.", "Month": "July", "Inches": 0.81}, {"Site": "East Boston - Day Sq.", "Month": "August", "Inches": 1.6}, {"Site": "East Boston - Day Sq.", "Month": "September", "Inches": 2.55}, {"Site": "East Boston - Day Sq.", "Month": "October", "Inches": 3.89}, {"Site": "East Boston - Day Sq.", "Month": "November", "Inches": 1.71}, {"Site": "Hyde Park - Cleary Sq.", "Month": "January", "Inches": 1.94}, {"Site": "Hyde Park - Cleary Sq.", "Month": "February", "Inches": 4.28}, {"Site": "Hyde Park - Cleary Sq.", "Month": "March", "Inches": 3.17}, {"Site": "Hyde Park - Cleary Sq.", "Month": "April", "Inches": 2.97}, {"Site": "Hyde Park - Cleary Sq.", "Month": "May", "Inches": 2.12}, {"Site": "Hyde Park - Cleary Sq.", "Month": "June", "Inches": 2.46}, {"Site": "Hyde Park - Cleary Sq.", "Month": "July", "Inches": 1.06}, {"Site": "Hyde Park - Cleary Sq.", "Month": "August", "Inches": 1.61}, {"Site": "Hyde Park - Cleary Sq.", "Month": "September", "Inches": 3.53}, {"Site": "Hyde Park - Cleary Sq.", "Month": "October", "Inches": 5.12}, {"Site": "Hyde Park - Cleary Sq.", "Month": "November", "Inches": 2.2}, {"Site": "Mattapan - Harambee Park", "Month": "January", "Inches": 1.92}, {"Site": "Mattapan - Harambee Park", "Month": "February", "Inches": 3.55}, {"Site": "Mattapan - Harambee Park", "Month": "March", "Inches": 3.26}, {"Site": "Mattapan - Harambee Park", "Month": "April", "Inches": 3.23}, {"Site": "Mattapan - Harambee Park", "Month": "May", "Inches": 1.62}, {"Site": "Mattapan - Harambee Park", "Month": "June", "Inches": 1.4}, {"Site": "Mattapan - Harambee Park", "Month": "July", "Inches": 0.29}, {"Site": "Mattapan - Harambee Park", "Month": "August", "Inches": 3.45}, {"Site": "Mattapan - Harambee Park", "Month": "September", "Inches": 3.76}, {"Site": "Mattapan - Harambee Park", "Month": "October", "Inches": 5.65}, {"Site": "Mattapan - Harambee Park", "Month": "November", "Inches": 1.96}, {"Site": "Roslindale - Roslindale Sq.", "Month": "January", "Inches": 2.24}, {"Site": "Roslindale - Roslindale Sq.", "Month": "February", "Inches": 4.09}, {"Site": "Roslindale - Roslindale Sq.", "Month": "March", "Inches": 3.58}, {"Site": "Roslindale - Roslindale Sq.", "Month": "April", "Inches": 3.59}, {"Site": "Roslindale - Roslindale Sq.", "Month": "May", "Inches": 1.76}, {"Site": "Roslindale - Roslindale Sq.", "Month": "June", "Inches": 2.85}, {"Site": "Roslindale - Roslindale Sq.", "Month": "July", "Inches": 1.17}, {"Site": "Roslindale - Roslindale Sq.", "Month": "August", "Inches": 3.45}, {"Site": "Roslindale - Roslindale Sq.", "Month": "September", "Inches": 4.45}, {"Site": "Roslindale - Roslindale Sq.", "Month": "October", "Inches": 4.67}, {"Site": "Roslindale - Roslindale Sq.", "Month": "November", "Inches": 2.22}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
